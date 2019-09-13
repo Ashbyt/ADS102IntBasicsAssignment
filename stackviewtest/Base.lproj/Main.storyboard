@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hnf-lJ-J0w">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stackviewtest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rDb-hO-aBA">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA7-vh-WNl" userLabel="Scores:">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAJ-lg-9t6">
+                                        <rect key="frame" x="0.0" y="179" width="414" height="179.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDE-Sr-58Y" userLabel="BtnPlay">
+                                        <rect key="frame" x="0.0" y="358.5" width="414" height="179"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="wF6-Kt-wiQ" userLabel="width = 10"/>
+                                        </constraints>
+                                        <state key="normal" title="Play Again?">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnClickSV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o2m-K0-1VV"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bBW-ie-vqr">
+                                        <rect key="frame" x="0.0" y="537.5" width="414" height="179.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUv-uN-Hyf" userLabel="btnA">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="179.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                </accessibility>
+                                                <state key="normal" title="btnA" image="pineapple"/>
+                                                <connections>
+                                                    <action selector="btnClickSV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mXv-kI-mxB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGf-f6-EME" userLabel="btnB">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="179.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                </accessibility>
+                                                <state key="normal" title="btnB" image="apple"/>
+                                                <connections>
+                                                    <action selector="btnClickSV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="noE-vh-0RM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDG-Dm-7pQ" userLabel="btnC">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="179.5"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                </accessibility>
+                                                <state key="normal" title="btnC" image="grapes"/>
+                                                <connections>
+                                                    <action selector="btnClickSV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tlo-ha-gjs"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qlr-XX-rQK">
+                                        <rect key="frame" x="0.0" y="717" width="414" height="179"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wg-kp-pJA" userLabel="btnD">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="179"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                </accessibility>
+                                                <state key="normal" title="btnD" image="pineapple"/>
+                                                <connections>
+                                                    <action selector="btnClickSV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vn2-p6-pCJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLz-Vj-3Fv" userLabel="btnE">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="179"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                </accessibility>
+                                                <state key="normal" title="btnE" image="strawberry"/>
+                                                <connections>
+                                                    <action selector="btnClickSV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VAt-HK-uMb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MK3-Aa-PW7" userLabel="btnF">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="179"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                </accessibility>
+                                                <state key="normal" title="btnF" image="strawberry"/>
+                                                <connections>
+                                                    <action selector="btnClickSV:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WmX-OF-9lx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rDb-hO-aBA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="9iE-H7-I8a"/>
+                            <constraint firstItem="rDb-hO-aBA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Q2L-Tr-l3a"/>
+                            <constraint firstItem="rDb-hO-aBA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wIo-Ht-5lU"/>
+                            <constraint firstItem="rDb-hO-aBA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="y2K-vl-vMu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Score" destination="kA7-vh-WNl" id="jNn-A7-m2U"/>
+                        <outlet property="btnA" destination="DUv-uN-Hyf" id="NS1-7Q-avf"/>
+                        <outlet property="btnB" destination="aGf-f6-EME" id="na6-tp-Erm"/>
+                        <outlet property="btnC" destination="eDG-Dm-7pQ" id="FWa-qd-Z5T"/>
+                        <outlet property="btnD" destination="9wg-kp-pJA" id="Cib-Gn-Nch"/>
+                        <outlet property="btnE" destination="mLz-Vj-3Fv" id="AdV-Jh-8mE"/>
+                        <outlet property="btnF" destination="MK3-Aa-PW7" id="bw6-Xd-aF2"/>
+                        <outlet property="lblPlay" destination="vDE-Sr-58Y" id="Lvz-BP-LtV"/>
+                        <outlet property="word" destination="KAJ-lg-9t6" id="iV8-I2-RdK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="8"/>
+        </scene>
+        <!--first screen-->
+        <scene sceneID="fr1-es-X9h">
+            <objects>
+                <viewController title="first screen" id="hnf-lJ-J0w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="edB-i0-NkB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="280" axis="vertical" distribution="fillEqually" spacing="136" translatesAutoresizingMaskIntoConstraints="NO" id="MYW-R2-KX9">
+                                <rect key="frame" x="124.5" y="350" width="165" height="206"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="280" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-TZ-uKX" userLabel="Stack View sub1">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Game!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRr-N2-6gr">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="280" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oVQ-lL-i9D" userLabel="Stack View sub2">
+                                        <rect key="frame" x="0.0" y="171" width="165" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k80-fI-nkB">
+                                                <rect key="frame" x="0.0" y="2.5" width="165" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="go">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="0MQ-8X-hQT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MYW-R2-KX9" firstAttribute="centerX" secondItem="iZm-qw-bEH" secondAttribute="centerX" id="h4h-4x-Eoa"/>
+                            <constraint firstItem="MYW-R2-KX9" firstAttribute="centerY" secondItem="iZm-qw-bEH" secondAttribute="centerY" id="qhy-Cq-GTN"/>
+                            <constraint firstItem="MYW-R2-KX9" firstAttribute="centerY" secondItem="iZm-qw-bEH" secondAttribute="centerY" id="yKZ-IW-Hqd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iZm-qw-bEH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EdN-v5-JZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608.69565217391312" y="6.6964285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="612" height="612"/>
+        <image name="grapes" width="800" height="450"/>
+        <image name="pineapple" width="183" height="275"/>
+        <image name="strawberry" width="225" height="225"/>
+    </resources>
+</document>
